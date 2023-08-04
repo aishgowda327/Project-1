@@ -1,0 +1,124 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html,body{
+    width:100%;
+    height:100%;
+}
+#main{
+    height:100%;
+    width:100%;
+    /* background-color:red; */
+    position:realtive;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+#main img{
+    height:600px;
+    position:realtive;
+    z-index:99;
+}
+#scroll-div{
+    position :absolute;
+    top:10%;
+    width:100%;
+    height:100px;
+    white-space:nowrap ;
+    overflow-x: auto;
+    overflow-y:hidden;
+}
+#scroll-div::-webkit-scrollbar{
+    display:none;
+}
+#scroll-div h1{
+    display:inline-block;
+    font-size:110px;
+    font-weight: 800;
+    text-transform:uppercase;
+    margin-right:30px;
+    letter-spacing:4px;
+    animation-name:scroll;
+    animation-duration:1s;
+    animation-timing-function:linear ;
+    animation-iteration-count:infinite;
+    
+}
+#scroll-div2{
+    position :absolute;
+    top:40%;
+    width:100%;
+    height:100px;
+    white-space:nowrap ;/*all children will be one line*/
+    overflow-x: auto;
+    overflow-y:hidden;
+    z-index:100;
+}
+#scroll-div2::-webkit-scrollbar{
+    display:none;
+}
+#scroll-div2 h1{
+    display:inline-block;
+    font-size:110px;
+    font-weight: 800;
+    text-transform:uppercase;
+    margin-right:30px;
+    letter-spacing:4px;
+    color:transparent;
+    -webkit-text-stroke-width:2px;
+    -webkit-text-stroke-color:rgb(22, 15, 15);
+    animation-name:scroll;
+    animation-duration:1s;
+    animation-timing-function:linear ;
+    animation-iteration-count:infinite;
+    
+}
+#scroll-div3{
+    position :absolute;
+    top:70%;
+    width:100%;
+    height:100px;
+    white-space:nowrap ;
+    overflow-x: auto;
+    overflow-y:hidden;
+}
+#scroll-div3::-webkit-scrollbar{
+    display:none;
+}
+#scroll-div3 h1{
+    display:inline-block;
+    font-size:110px;
+    font-weight: 800;
+    text-transform:uppercase;
+    margin-right:30px;
+    letter-spacing:4px;
+    animation-name:scroll;
+    animation-duration:1s;
+    animation-timing-function:linear ;
+    animation-iteration-count:infinite;
+    animation-direction:reverse;
+    
+}
+#text{
+    font-size:15px;
+    font-weight:800;
+    position:absolute;
+    top:10%;
+    width:40%;
+    /* background-color:red; */
+    z-index:999;
+    text-align:center;
+    text-transform: uppercase;
+}
+@keyframes scroll{
+   0%{
+       transform: translateX(-100%);
+    }
+    100%{
+    transform: translateX(0);
+
+    }
+}
